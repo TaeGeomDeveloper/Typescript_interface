@@ -1,0 +1,66 @@
+# Typescript_interface
+타입 스크립트 인터페이스 공부
+
+인터페이스는 일반적으로 타입 체크를 위해 사용되며 변수, 함수, 클래스에 사용할 수 있다.
+인터페이스는 여러가지 타입을 갖는 프로퍼티로 이루어진 새로운 타입을 정의하는 것과 유사하다. 
+
+## Optional property
+< _interface2.js_ > < _interface3.js_ >
+
+```typescript
+  interface Person2{
+  name: string;
+  age?: number;         // 있을수도 있고 없을수도 있으면 ? 를 사용
+  }
+  function hello2(person: Person2): void {
+    console.log(`안녕하세요! ${person.name} 입니다.`);
+  }
+```
+
+```typescript
+  interface Person3 {
+  name: string;
+  age? : number;
+
+  [index: string]: any; 
+  }
+  function hello3(person: Person3): void {
+    console.log(`안녕하세요! ${person.name}`);
+  }
+  const p32: Person3 = {
+  name : "Anna",
+  systems : ['Sung','Chan'],
+  };
+```
+
+## Function in interface
+< _interface4.js_ >
+
+```typescript
+
+```
+
+## class implements interface
+< _interface5.js_ >
+```typescript
+
+```
+
+## interface extends interface
+< _interface6.js_ >
+```typescript
+
+```
+
+## fuction interface
+< _interface7.js_ >
+```typescript
+
+```
+
+## Readonly interface Properites
+< _interface8.js_ >
+```typescript
+
+```
+
